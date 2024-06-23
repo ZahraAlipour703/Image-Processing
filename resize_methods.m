@@ -21,3 +21,7 @@ reimg3 = imresize(img,0.5,'bicubic');
 imshow(reimg3);
 title('resize bicubic');
 img=cast(img,'double');
+subplot(2,3,5);
+neg = 255-img;
+imshow(neg, [min(neg(:)) max(neg(:))]);
+title('negative image');
